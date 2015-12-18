@@ -1,0 +1,12 @@
+"Restaurant Application" is developed by RedHex.And Developed for
+ software engineering class projec under the faculty of Rashedul
+ Islam Rana.
+
+Using instruction:-
+------------------------------------------------------------------
+1. Create a databse with name "ra"
+2. Import the attachment database.
+3. Username is "root".
+4. Password is "";
+5. For mail sending use a gmail account. otherwise catch exception.
+------------------------------------------------------------------

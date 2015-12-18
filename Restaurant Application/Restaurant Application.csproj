@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2E5681A-1A47-471E-8E38-56AE598F47DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant_Application</RootNamespace>
+    <AssemblyName>Restaurant Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Furkanul Islam\Desktop\New folder\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Restruant application</ProductName>
+    <PublisherName>RedHex</PublisherName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9F49FD382358A5BFF3A49FEE66871E86E1EF8DDF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Restaurant Application_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.7\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barcode.cs" />
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_2.Designer.cs">
+      <DependentUpon>Contact_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEdit.Designer.cs">
+      <DependentUpon>MenuEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableEmpty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableEmpty.Designer.cs">
+      <DependentUpon>TableEmpty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Favourite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Favourite.Designer.cs">
+      <DependentUpon>Favourite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostPopular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostPopular.Designer.cs">
+      <DependentUpon>MostPopular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncodeDecode.cs" />
+    <Compile Include="OrderReceive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderReceive.Designer.cs">
+      <DependentUpon>OrderReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuADD.Designer.cs">
+      <DependentUpon>MenuADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empty_One.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empty_One.Designer.cs">
+      <DependentUpon>Empty_One.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefIndex.Designer.cs">
+      <DependentUpon>ChefIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailPass.cs" />
+    <Compile Include="Mailer_func.cs" />
+    <Compile Include="CountDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountDown.Designer.cs">
+      <DependentUpon>CountDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileReadWrite.cs" />
+    <Compile Include="Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table.Designer.cs">
+      <DependentUpon>Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserIndex.Designer.cs">
+      <DependentUpon>UserIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_2.resx">
+      <DependentUpon>Contact_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEdit.resx">
+      <DependentUpon>MenuEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableEmpty.resx">
+      <DependentUpon>TableEmpty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Favourite.resx">
+      <DependentUpon>Favourite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostPopular.resx">
+      <DependentUpon>MostPopular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderReceive.resx">
+      <DependentUpon>OrderReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuADD.resx">
+      <DependentUpon>MenuADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empty_One.resx">
+      <DependentUpon>Empty_One.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefIndex.resx">
+      <DependentUpon>ChefIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountDown.resx">
+      <DependentUpon>CountDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table.resx">
+      <DependentUpon>Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserIndex.resx">
+      <DependentUpon>UserIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Restaurant_Application.Properties.Resources.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Restaurant Application_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\400-TableTalk-icon-food-rgb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\118661-l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aal-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow wallpaper.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-Point-Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White_power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aal-menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud387.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daily-calendar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-cloud-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloude_sun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clude_sunn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendrier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favourite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popular_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar Image-1524x975.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popular.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popularGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PGIF1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popularGIF1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popular1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableno.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-147314_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderID.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuEdit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
